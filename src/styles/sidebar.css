@@ -17,13 +17,13 @@ body {
 }
 
 ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 0px;
 }
 
 ul li{
     list-style-type: none;
-    margin-top: 17px;
-    margin-bottom: 17px;
+    height: 50px;
+    vertical-align: middle;
 }
 
 li a {
@@ -33,6 +33,22 @@ li a {
     font-family: Roboto Mono;
 }
 
+li :hover {
+    background-color: rgb(217, 158, 48);
+}
+
 .links {
     padding-top: 50px;
+}
+
+.sideNavIcons {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    size: 60px;
+}
+
+.sideNavIcons:hover {
+    cursor: pointer;
+    color: rgb(217, 158, 48);
 }
