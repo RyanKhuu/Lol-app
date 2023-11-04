@@ -4,15 +4,15 @@ import LOLogo from "../assets/ls_logo.png";
 
 const Sidebar = () => {
     return(
-        <div className="sideNavBody">
-            <div className="container">
-                <div className="logo">
-                    <a href="/">
-                        <img src={LOLogo} height={75} width={90}></img>
-                    </a>
-                </div>
-            </div>
-            <nav>   
+        <nav>
+            <div className="sideNavBody">
+                <div className="container">
+                    <div className="logo">
+                        <a href="/">
+                            <img src={LOLogo} height={75} width={90}></img>
+                        </a>
+                    </div>
+                </div>  
                 <div id="mainListDiv" className="main_list">
                     <ul className="navLinks">
                         <li>
@@ -35,8 +35,12 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+                <div className="icon_links">
+                    
+                </div>
+            </div>
+        </nav>
+            
     )
 }
 
