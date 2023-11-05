@@ -5,6 +5,7 @@ body {
 }
 .sideNavBody {
     width: 200px;
+    height: 100vh;
 }
 
 .logo {
@@ -22,8 +23,9 @@ ul {
 
 ul li{
     list-style-type: none;
-    height: 50px;
-    vertical-align: middle;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
 }
 
 li a {
@@ -33,19 +35,24 @@ li a {
     font-family: Roboto Mono;
 }
 
-li :hover {
-    background-color: rgb(217, 158, 48);
+ul :hover {
+    /*background-color: rgb(217, 158, 48); should be used for when selected*/
+    background-color: rgb(180, 126, 26);
 }
 
 .links {
     padding-top: 50px;
 }
 
+.icon_links {
+    transform: translate(0, 26vh);
+}
+
 .sideNavIcons {
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    size: 60px;
+    margin-left: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .sideNavIcons:hover {

@@ -30,7 +30,7 @@ const Sidebar = () => {
                             <a href="links">Items</a>
                         </li>
                         <li>
-                            <a href='links'>Damage Calculator</a>
+                            <a href='links'>Calculator</a>
                         </li>
                         <li>
                             <a href="links">Builds</a>
