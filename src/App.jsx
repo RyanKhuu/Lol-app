@@ -1,18 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Sidebar from "../src/components/sidebar"
 import Login from "../src/pages/Login"
-import Signup from "../src/pages/SignUp"
+import SignUp from "../src/pages/SignUp"
+import "../src/styles/App.css"
 
 function App() {
   return (
     <BrowserRouter>
-      <Sidebar/>
+    <div className="SideBar">
+      <Sidebar/> 
       <Routes>
         <Route
         path="/"
+        element={<SignUp/>}
+        />
+        <Route
+        path="/Login"
         element={<Login/>}
         />
       </Routes>
+    </div>
     </BrowserRouter>
   )
 }
