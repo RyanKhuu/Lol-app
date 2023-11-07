@@ -5,7 +5,7 @@ body {
 }
 .sideNavBody {
     width: 200px;
-    height: 100vh;
+    height: 98.3vh;
 }
 
 .logo {
@@ -45,14 +45,17 @@ ul :hover {
 }
 
 .icon_links {
-    transform: translate(0, 26vh);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding-bottom: 5vh;
 }
 
 .sideNavIcons {
     color: white;
     margin-left: 10px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .sideNavIcons:hover {
