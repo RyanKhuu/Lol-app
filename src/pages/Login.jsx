@@ -1,22 +1,23 @@
 import React from "react";
-import "../styles/SUL.css"
+import classes from "../styles/Login.module.css"
+import SULBackground from "../assets/SULBackground.png";
 
 const Login = () => {
     return(
-        <div class="sulPage">
-            <div className="sulContainer">
+        <div class="SulPage">
+            <img className="LeagueBackground" src={SULBackground}/>
+            <div className={`${classes.sulContainer}`}>
                 <div className="sulItems">
+                <p className="SUL">Login</p>
                     <div className="EmailPassword">
-                        <img></img>
                         <form>
-                            <h4 className="SUL">Login</h4>
                             <div class="formAttributes">
-                                <label for="UserEmail">Email</label>
+                                <label for="UserEmail">Email:</label><br/>
                                 <input type="text" id="UserEmail" name="email"></input>
                             </div>
                             <div class="formAttributes">
-                                <label for="UserPassword">Password</label>
-                                <input type="text" id="UserPassword" name="Password"></input>
+                                <label for="UserPassword">Password:</label><br/>
+                                <input type="password" id="UserPassword" name="Password"></input>
                             </div>
                             <div class="formButton">
                                 <button class="sulButton">Login</button>
@@ -25,7 +26,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>   
     )
 }
 

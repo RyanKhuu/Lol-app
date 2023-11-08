@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/SUL.css"
+import "../styles/SignUp.css"
 import SULBackground from "../assets/SULBackground.png";
 
 const SignUp = () => {
@@ -8,20 +8,20 @@ const SignUp = () => {
             <img className="LeagueBackground" src={SULBackground}/>
             <div className="sulContainer">
                 <div className="sulItems">
-                    <h4 className="SUL">Create an Account</h4>
+                    <p className="SUL">Create an Account</p>
                     <div className="EmailPassword">
                         <form>
                             <div class="formAttributes">
-                                <label for="UserDisplayName">Display Name</label>
+                                <label for="UserDisplayName">Display Name:</label><br/>
                                 <input type="text" id="UserDisplayName" name="DisplayName"></input>
                             </div>
                             <div class="formAttributes">
-                                <label for="UserEmail">Email</label>
+                                <label for="UserEmail">Email:</label><br/>
                                 <input type="text" id="UserEmail" name="email"></input>
                             </div>
                             <div class="formAttributes">
-                                <label for="UserPassword">Password</label>
-                                <input type="text" id="UserPassword" name="Password"></input>
+                                <label for="UserPassword">Password:</label><br/>
+                                <input type="password" id="UserPassword" name="Password"></input>
                             </div>
                             <div class="formButton">
                                 <button class="sulButton">Create Account</button>
