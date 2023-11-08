@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/SUL.css"
+import SULBackground from "../assets/SULBackground.png";
 
 const SignUp = () => {
     return(
         <div className="SulPage">
+            <img className="LeagueBackground" src={SULBackground}/>
             <div className="sulContainer">
                 <div className="sulItems">
+                    <h4 className="SUL">Create an Account</h4>
                     <div className="EmailPassword">
-                        <img></img>
                         <form>
-                            <h4 className="SUL">Create an Account</h4>
                             <div class="formAttributes">
                                 <label for="UserDisplayName">Display Name</label>
                                 <input type="text" id="UserDisplayName" name="DisplayName"></input>
