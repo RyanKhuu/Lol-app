@@ -98,3 +98,23 @@ input[type=password]:focus {
     background-color: rgb(180, 126, 26);
     color: white;
 }
+
+.LoginPage {
+    height: 40px;
+    margin: auto;
+}
+
+.Login {
+    font-family: Roboto Mono;
+    color: white;
+    width: 50%;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    transform: translate(53%, 10%);
+}
+.Login:hover {
+    cursor: pointer;
+    color: rgb(180, 126, 26);
+    text-decoration: underline;
+}

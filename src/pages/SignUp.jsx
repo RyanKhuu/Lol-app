@@ -1,8 +1,14 @@
 import React from "react";
 import "../styles/SignUp.css"
 import SULBackground from "../assets/SULBackground.png";
+import {useNavigate} from "react-router-dom"
 
 const SignUp = () => {
+    const navigate = useNavigate();
+    const Login = () => {
+        navigate("/Login");
+    }
+
     return(
         <div className="SulPage">
             <img className="LeagueBackground" src={SULBackground}/>
@@ -25,6 +31,11 @@ const SignUp = () => {
                             </div>
                             <div class="formButton">
                                 <button class="sulButton">Create Account</button>
+                            </div>
+                            <div className="SwitchPage">
+                                <p className="Switch" onClick={Login}>
+                                    Already have an account? Login
+                                </p>
                             </div>
                         </form>
                     </div>

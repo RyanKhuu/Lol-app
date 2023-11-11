@@ -22,6 +22,11 @@ const Login = () => {
                             <div class="formButton">
                                 <button class="sulButton">Login</button>
                             </div>
+                            <div className={`${classes.LoginPage}`}>
+                                <p className={`${classes.Login}`}>
+                                    Don't have an account? SignUp
+                                </p>
+                            </div>
                         </form>
                     </div>
                 </div>
