@@ -10,7 +10,7 @@ const Login = () => {
     }
     return(
         <div class="SulPage">
-            <img className="LeagueBackground" src={SULBackground}/>
+            <img className={`${classes.LeagueBackground}`} src={SULBackground}/>
             <div className={`${classes.sulContainer}`}>
                 <div className="sulItems">
                 <p className="SUL">Login</p>
