@@ -11,7 +11,9 @@ const Login = () => {
 
     return(
         <div class="SulPage">
-            <img className="LeagueBackground" src={SULBackground}/>
+            <div className="imgB">
+                <img className="LeagueBackground" src={SULBackground}/>
+            </div>
             <div className={`${classes.sulContainer}`}>
                 <div className="sulItems">
                 <p className="SUL">Login</p>
