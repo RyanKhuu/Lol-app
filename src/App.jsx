@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Sidebar from "../src/components/sidebar"
 import Login from "../src/pages/Login"
 import SignUp from "../src/pages/SignUp"
+import Home from "../src/pages/HomePage"
 import "../src/styles/App.css"
 
 function App() {
@@ -10,6 +11,10 @@ function App() {
     <div className="SideBar">
       <Sidebar/> 
       <Routes>
+        <Route
+        path="/s"
+        element={<Home/>}
+        />
         <Route
         path="/"
         element={<SignUp/>}
