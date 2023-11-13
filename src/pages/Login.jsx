@@ -1,14 +1,8 @@
 import React from "react";
 import classes from "../styles/Login.module.css"
 import SULBackground from "../assets/SULBackground.png";
-import {useNavigate} from "react-router-dom"
 
 const Login = () => {
-    const navigate = useNavigate();
-    const SignUp = () => {
-        navigate("/");
-    }
-
     return(
         <div class="SulPage">
             <div className="imgB">
@@ -31,7 +25,7 @@ const Login = () => {
                                 <button class="sulButton">Login</button>
                             </div>
                             <div className={`${classes.LoginPage}`}>
-                                <p className={`${classes.Login}`} onClick={SignUp}>
+                                <p className={`${classes.Login}`}>
                                     Don't have an account? SignUp
                                 </p>
                             </div>
