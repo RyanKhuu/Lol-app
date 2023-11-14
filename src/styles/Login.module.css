@@ -108,11 +108,11 @@ input[type=password]:focus {
 .Login {
     font-family: Roboto Mono;
     color: white;
-    width: 50%;
+    width: 40%;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
-    transform: translate(53%, 10%);
+    transform: translate(75%, 10%);
 }
 .Login:hover {
     cursor: pointer;

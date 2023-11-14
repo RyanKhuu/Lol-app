@@ -1,13 +1,30 @@
 import React from "react";
 import "../styles/SignUp.css"
 import SULBackground from "../assets/SULBackground.png";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import { useState } from "react";
 
 const SignUp = () => {
+
     const navigate = useNavigate();
     const Login = () => {
         navigate("/Login");
     }
+
+    const [message, setMessage] = useState('');
+
+    const handleChange = (e) => {
+        const result = e.target.value.replace(/[^a-z]/gi, '');
+    
+        setMessage(result);
+      };
+    
+
+    // const[email, setEmail]= useState('')
+    // const[password, setPassword]= useState('')
+    // const[userName, setUsername]= useState('')
+
+
 
     return(
         <div className="SulPage">
@@ -19,7 +36,7 @@ const SignUp = () => {
                         <form>
                             <div class="formAttributes">
                                 <label for="UserDisplayName">Display Name:</label><br/>
-                                <input type="text" id="UserDisplayName" name="DisplayName"></input>
+                                <input type="text" id="UserDisplayName" name="DisplayName" value={message} onChange={handleChange}></input>
                             </div>
                             <div class="formAttributes">
                                 <label for="UserEmail">Email:</label><br/>

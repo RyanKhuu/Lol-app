@@ -108,11 +108,11 @@ input[type=password]:focus {
 .Switch {
     font-family: Roboto Mono;
     color: white;
-    width: 65%;
+    width: 45%;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
-    transform: translate(28%, 0);
+    transform: translate(60%, 0);
 }
 
 .Switch:hover {
