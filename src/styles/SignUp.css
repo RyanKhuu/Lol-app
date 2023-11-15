@@ -18,7 +18,7 @@
 .sulContainer {
     background-color: black;
     width: 50%;
-    height: 85%;
+    height: 80%;
     margin: auto;
     top: 10%;
     right: 25%;
@@ -37,7 +37,7 @@
 }
 
 .EmailPassword {
-    max-width: 65%;
+    max-width: 100%;
     margin: auto;
     transform: translate(0, 5%);
 }
@@ -51,6 +51,19 @@ div label{
     font-family: Roboto Mono;
     font-weight: 400;
     font-size: 30px;
+    right: 10%;
+}
+
+.pdl{
+    width: 65%;
+    padding-left: 17%;
+}
+
+.inputDiv {
+    width: 80%;
+    padding-left: 17%;
+    display: flex;
+    align-items: center;
 }
 
 input[type=text] {
@@ -62,7 +75,7 @@ input[type=text] {
 }
 
 input[type=password] {
-    width: 100%;
+    width: 81.25%;
     height: 3.5vh;
     font-family: Roboto Mono;
     font-weight: 400;
@@ -76,6 +89,17 @@ input[type=text]:focus {
 input[type=password]:focus {
     outline: 3px solid black;
 }
+
+.passwordView {
+    color: white;
+    padding-left: 10px;
+}
+
+.passwordView:hover{
+    cursor: pointer;
+    color: rgb(217, 158, 48);
+}
+
 
 .formButton {
     height: 50px;
@@ -101,6 +125,7 @@ input[type=password]:focus {
 }
 
 .SwitchPage {
+    padding: 1%;
     height: 40px;
     margin: auto;
 }

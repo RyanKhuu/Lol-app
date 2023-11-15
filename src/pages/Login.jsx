@@ -3,6 +3,8 @@ import classes from "../styles/Login.module.css"
 import SULBackground from "../assets/SULBackground.png";
 import {useNavigate} from "react-router-dom"
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -33,12 +35,23 @@ const Login = () => {
                     <div className="EmailPassword">
                         <form>
                             <div class="formAttributes">
-                                <label htmlFor="UserEmail">Email:</label><br/>
-                                <input type="text" id="UserEmail" name="email" maxLength={254} value={email} onChange={inputRestriction}></input>
+                                <div className="pdl">
+                                    <label htmlFor="UserEmail">Email:</label><br/>
+                                    <input type="text" id="UserEmail" name="email" maxLength={254} value={email} onChange={inputRestriction}></input>
+                                </div>
                             </div>
                             <div class="formAttributes">
-                                <label htmlFor="UserPassword">Password:</label><br/>
-                                <input type="password" id="UserPassword" name="Password" minLength={8} maxLength={254} value={password} onChange={inputRestriction}></input>
+                                <div className="pdl">
+                                    <label htmlFor="UserPassword">Password:</label><br/>
+                                </div>
+                                <div className="inputDiv">
+                                    <input type="password" id="UserPassword" name="Password" minLength={8} maxLength={25} value={password} onChange={inputRestriction}></input>
+                                    <div className="tU">
+                                       <i className="passwordView">
+                                        <FontAwesomeIcon icon={faEyeSlash} size="2xl"/>
+                                        </i> 
+                                    </div>
+                                </div>
                             </div>
                             <div class="formButton">
                                 <button className="sulButton">Login</button>
