@@ -16,6 +16,11 @@ const SignUp = () => {
     const [displayName, setDisplayName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [inputType, setInputType] = useState("password");
+    const [faIcon, setFaIcon] = useState(faEyeSlash);
+    const [inputValue, setValue] = useState(0);
+    const inputTypes = ["password", "text"]
+    const iconTypes = [faEyeSlash, faEye]
 
    const inputRestriction = (e) => {
 
@@ -31,6 +36,18 @@ const SignUp = () => {
         }
         setMessage(result);
       };
+
+    const changeInputType = (e) => {
+        if(inputValue == 0){
+            setValue(1)
+            setFaIcon(iconTypes[inputValue])
+            setInputType(inputTypes[inputValue])
+        } else if(inputValue == 1){
+            setValue(0)
+            setFaIcon(iconTypes[inputValue])
+            setInputType(inputTypes[inputValue])
+        }
+    };
 
     return(
         <div className="SulPage">
@@ -57,10 +74,12 @@ const SignUp = () => {
                                     <label htmlFor="UserPassword">Password:</label><br/>
                                 </div>
                                 <div className="inputDiv">
-                                    <input type="password" id="UserPassword" name="Password" minLength={8} maxLength={25} value={password} onChange={inputRestriction}></input>
+                                <div className="passwordDiv">
+                                        <input type={inputType} id="UserPassword" className="password" minLength={8} maxLength={25} value={password} onChange={inputRestriction}></input>
+                                    </div>
                                     <div className="tU">
                                        <i className="passwordView">
-                                        <FontAwesomeIcon icon={faEyeSlash} size="2xl"/>
+                                        <FontAwesomeIcon icon={faIcon} size="2xl" value="hidden" onClick={changeInputType}/>
                                         </i> 
                                     </div>
                                 </div>
